@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { GeographyComponent } from './geography/geography.component';
+import { HomeComponent } from './home/home.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:  "", pathMatch:  "full",redirectTo:  "home"},
+  {path: "home", component: HomeComponent},
+  {path: "geography", component: GeographyComponent},
+  {path: "timeline", component: TimelineComponent},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
