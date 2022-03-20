@@ -23,7 +23,7 @@ export class TimelineComponent implements OnInit {
   private initEvents(): void {
     
     const today = new Date();
-    today.setFullYear(-490);
+    today.setFullYear(-489);
     today.setMonth(8);
     today.setDate(10);
     today.setHours(6)
